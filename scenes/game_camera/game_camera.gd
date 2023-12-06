@@ -8,7 +8,7 @@ func _ready():
 
 func _process(delta):
 	acquire_target()
-	global_position = global_position.lerp(target_position, 1.0 - exp(-delta * 2))
+	global_position = global_position.lerp(target_position, 1.0 - exp(-delta * 5))
 
 
 func acquire_target():
